@@ -124,7 +124,7 @@ echo -n "${GREEN}[ note ]${RESET} Signing new apk...."
 uber --allowResign -a $TARGET_F/dist/$APK &>/dev/null && echo -n "${GREEN}\tDONE\n${RESET}" || error
 [ $F_GENERATE -eq 1 ] && {
   RC_F=$(echo $MSF_APK | sed 's/.apk$/.rc/')
-echo -n "${GREEN}[ note ]${RESET} Generate rc congig ${BLUE}${RC_F}${RESET}...."
+echo -n "${GREEN}[ note ]${RESET} Generate rc config ${BLUE}${RC_F}${RESET}...."
   cat << EOF >> $RC_F
 # [Kali]: msfdb start; msfconsole -q -r ${RC_F}
 #
